@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#33ff33"
+        android:text="Quản lí nhân viên" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="80dp"
+            android:text="Mã NV:"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_manv"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="80dp"
+            android:text="Tên NV:"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_tennv"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Loại NV:" />
+
+       <RadioGroup
+           android:id="@+id/radioGroup1"
+           android:layout_width="wrap_content"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+
+           <RadioButton
+               android:id="@+id/rdchinhthuc"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Chính thức" />
+
+
+        <RadioButton
+            android:id="@+id/rdthoivu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Thời vụ" />
+       </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_nhap"
+        android:text="Nhập NV"
+        android:layout_width="250dp"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        />
+
+       <ListView
+           android:id="@+id/lvNhanVien"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
